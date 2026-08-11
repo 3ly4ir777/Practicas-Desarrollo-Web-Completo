@@ -1,0 +1,97 @@
+:root{
+    --blanco: #ffffff;
+    --obscuro: #000000;
+    --primario: #d3c612;
+    --secundario: #0097a7;
+    --gris: #999;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Playwrite AU SA", serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--obscuro);
+    
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal{
+    
+    display: flex;
+    flex-direction: column;
+    
+    /*tomar nota de los distinttos tipos de space*/
+}
+
+@media (min-width: 720px ) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+/*resoluciones recomendadas estandar para cada dispositivo:
+480px celular
+768px tablet
+1140 y 1440 o 1400 pata pc/laptop 
+*/
+
+}
+
+.navegacion-principal a {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    color: var(--blanco);
+    text-decoration: none;
+    /*esto elimina el subrrallado de un enlace y cambio de color a morado*/
+    font-size: 1.5rem;
+    font-weight: bold;
+    /*font-weigth le da el grosor bold o 700 es en negritas*/
+
+
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--obscuro);
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*El profesor recomienda usar rem para que la página sea más accesible en todos los dispositivos, haciendo primero el ajuste en el html y en el body para que el rem sea más manejable, cada rem será igual a 10px, por lo que 1.6rem será igual a 16px */
+
+/*root es una variable global que se puede usar en cualquier parte del documento*/
+
+/*las clases empiezan con un punto y los id con un numeral, es recomendable usar clases para no tener problemas de especificidad y es reutilizable, los id son más específicos y no se pueden reutilizar, no puedes empezar un selector con un número, no puedes usar guiones bajos, no puedes usar espacios, no puedes usar palabras reservadas, no puedes usar guiones medios, important fuerza que se aplique el estilo, pero no es recomendable usarlo porque puede causar problemas de especificidad, es mejor usarlo en casos de emergencia***/
+
+/*al definir el tipo de letra se puede agregar mas de una por si la primera no se encuentra en el sistema del usuario*/
+
+/*el margen se puede especificar cada direccion o resumir en un solo renglon siguiendo el sentido del las manecillas del reloj, y si los opuestos son iguales se puede poner el valor solo una vez***/
+
+/*la diferencia entre padding y margin es que padding engrosa desde donde termina hacia adetro y margin separa hacia afuera con otros elemenos, ambos usan los parametros de la misma forma en sentido horario y se pueden abreviar lineas */
+
+/*para crear user snippets atajos personalizados se usa ctrl alt p*/
