@@ -1,0 +1,1 @@
+Este repositorio fue creado para demostrar el progreso de las practicas con el curso Desarrollo web Completo por Juan Pablo De la torre Valdez, de momento y puede estar sujeto a diversos cambios de estructura asi como tambien contemplado añadirse la demostracion de las practicas de mas cursos. 
