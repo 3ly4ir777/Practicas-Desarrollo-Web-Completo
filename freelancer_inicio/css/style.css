@@ -20,11 +20,17 @@ body{
     font-family: "Playwrite AU SA", serif;
 }
 
-.titulo{
-    text-align: center;
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
     font-size: 2.8rem;
-    color: var(--obscuro);
-    
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1, h2, h3{
+    text-align: center;
 }
 
 .titulo span{
@@ -35,6 +41,26 @@ body{
     max-width: 120rem;
     margin: 0 auto;
     
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 80%;
+    text-align: center;
+
+}
+@media (min-width: 720px) {
+    .boton{
+        width: auto;
+    }
 }
 
 .nav-bg{
@@ -85,8 +111,31 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    padding: 20px;
+   
+    position: relative;
 }
+.contenido-hero {
+    position: absolute;
+    /* background-color: rgba( 0, 0, 0, .7); */ 
+    /* sintaxis muy antigua */
+    background-color: rgb( 0 0 0 / 70%);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2, .contenido-hero p {
+    color: var(--blanco);
+}
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+
 
 
 /*El profesor recomienda usar rem para que la página sea más accesible en todos los dispositivos, haciendo primero el ajuste en el html y en el body para que el rem sea más manejable, cada rem será igual a 10px, por lo que 1.6rem será igual a 16px */
