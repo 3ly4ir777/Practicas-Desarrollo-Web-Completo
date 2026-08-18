@@ -1,0 +1,9 @@
+:root{
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+
+    --fuentePrincipal: 'Mozilla Text', sans-serif;
+}
