@@ -39,3 +39,17 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width:720px) {
+    .tres-columnas{
+        display: flex;
+        column-gap: 2rem ;
+
+    }
+
+    /* .entrada-blog{
+        flex: 0 0 calc (33.33% - 1rem)
+    } */
+
+    /* una opcion muy antigua para tener soporte en safari cuando no soportaba flexbox, que se joda safari y sus exigencias y Apple */
+}
